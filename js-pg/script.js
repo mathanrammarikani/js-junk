@@ -12,4 +12,4 @@ const person = {
 };
 
 x = person.address.door_no;
-console.log(x);
+console.log(x);.
