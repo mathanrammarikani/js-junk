@@ -1,7 +1,7 @@
 let x;
 
 const person = {
-  name: "john",
+  name: "jane",
   age: 28,
   isAdmin: true,
   address: {
@@ -9,7 +9,14 @@ const person = {
     door_no: "8A/41",
     pincode: 89782,
   },
+  hobbies: ["fishing", "hiking", "swimming"],
 };
 
-x = person.address.door_no;
+person.greet = function () {
+  console.log(`Hello, my name is ${this.name}`);
+};
+
+person.greet((person.name = "maddy"));
+x = person;
+
 console.log(x);
