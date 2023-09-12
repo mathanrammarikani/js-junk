@@ -19,4 +19,4 @@ person.greet = function () {
 person.greet((person.name = "maddy"));
 x = person;
 
-console.log(x);
+console.log(x);.
